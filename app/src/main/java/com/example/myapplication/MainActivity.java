@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +17,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void sendMessage(View view) {
-       TextView text = (TextView) findViewById(R.id.textView2);
-       text.setText("Button Clicked");
+        EditText medittext = findViewById(R.id.editText1);
+        int compareOneTwo = Character.compare('a', 'a');
+        if (1 == 1)
+        {
+            TextView text = (TextView) findViewById(R.id.textView2);
+            text.setText("Base Character");
+
+        }
+
     }
 }
