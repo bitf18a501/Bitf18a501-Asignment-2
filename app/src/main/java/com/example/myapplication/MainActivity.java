@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         if (1 == 1)
         {
             TextView text = (TextView) findViewById(R.id.textView2);
-            text.setText("Base Character");
+            text.setText('a');
 
         }
 
