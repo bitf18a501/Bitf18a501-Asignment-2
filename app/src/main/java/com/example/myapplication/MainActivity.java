@@ -1,11 +1,11 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,12 +17,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void sendMessage(View view) {
-        EditText medittext = findViewById(R.id.editText1);
-        int compareOneTwo = Character.compare('a', 'a');
-        if (1 == 1)
+        EditText medittext = (EditText) findViewById(R.id.editText1);
+        String strusername = medittext.getText().toString();
+        Character char1 = strusername.charAt(0);
+      //  System.out.println("abcd");
+        int compareOneTwo = Character.compare(char1, 'a');
+        if (compareOneTwo == 0)
         {
             TextView text = (TextView) findViewById(R.id.textView2);
-            text.setText('a');
+            text.setText("Given character is a Base Character");
 
         }
 
